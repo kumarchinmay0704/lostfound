@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="foundForm.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lemon&family=Monoton&family=Montserrat:ital,wght@0,200;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <title>Register</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand grow" href="../index.html" style="word-spacing: 10PX;">BMSCE: LOST   &   FOUND</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </nav>
+
+    <main>
+        <section>
+            <div class="container" id="main-container">
+                <div class="image">
+                    <img src="../images/register.jpg" alt="">
+                </div>
+
+                <div class="container p-5 mt-5" id="form-container">
+                    <h1 class="text-center">Register Here <i class="far fa-smile-beam"></i></h1>
+                    <form id="registrationForm" class="mt-4" action="http://localhost:3000/api/register" method="POST">
+                        <div class="form-group">
+                            <label for="fullName">Full Name*</label>
+                            <input type="text" class="form-control" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone No.</label>
+                            <input type="text" class="form-control" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Year*</label>
+                            <select id="year" class="form-control" name="year" required>
+                                <option selected disabled>Choose...</option>
+                                <option value="first">First</option>
+                                <option value="second">Second</option>
+                                <option value="third">Third</option>
+                                <option value="fourth">Fourth</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="branch">Branch*</label>
+                            <select id="branch" class="form-control" name="branch" required>
+                                <option selected disabled>Choose...</option>
+                                <option value="cse">Computer Science Engineering</option>
+                                <option value="is">Information Science</option>
+                                <option value="ec">Electronics And Communication Engineering</option>
+                                <option value="ee">Electrical Engineering</option>
+                                <option value="ae">Aerospace Engineering</option>
+                                <option value="me">Mechanical Engineering</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password*</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password*</label>
+                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="agreeCheck" required>
+                            <label class="form-check-label" for="agreeCheck">Agree terms and conditions</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="sticky-footer" class=" py-2 bg-dark">
+        <div class="brand">
+            <a class="navbar-brand" href="#">gotLost</a>
+        </div>
+        <div class="copyright">
+            <small> <span>Copyright &copy;</span> <span>All Rights Reserved</span> <span>Terms of Use</span> and
+                <span>Privacy Policy</span></small>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Include this link in the registration form -->
+    <a href="login.html" id="loginLink" style="display: none;">Proceed to Login</a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('registrationForm').addEventListener('submit', async function (event) {
+                event.preventDefault();
+                const fullName = document.getElementById('fullName').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const year = document.getElementById('year').value;
+                const branch = document.getElementById('branch').value;
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+
+                if (password !== confirmPassword) {
+                    alert("Passwords do not match");
+                    return;
+                }
+
+                const userData = {
+                    fullName,
+                    email,
+                    phone,
+                    year,
+                    branch,
+                    password
+                };
+
+                try {
+                    const response = await fetch('http://localhost:3000/api/register', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(userData)
+                    });
+
+                    const data = await response.json();
+                    if (data.success) {
+                        alert(data.message); // Display success message
+                        window.location.href = 'login.html'; // Redirect to login page
+                    } else {
+                        alert(data.message); // Display error message
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('An error occurred. Please try again later.'); // Display generic error message
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

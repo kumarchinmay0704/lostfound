@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="foundForm.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lemon&family=Monoton&family=Montserrat:ital,wght@0,200;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <title>Lost and Found Form</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand grow" href="../index.html" style="word-spacing: 10PX;">BMSCE: LOST & FOUND</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link grow" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link grow" href="lost&found.html">Lost & Found</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link grow" href="contactus.html">Contact Us</a>
+                </li>
+            </ul>
+            <a href="./register.html"><i class="fas fa-user signin grow"> SignIn</i></a>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="container" id="main-container">
+                <div class="image">
+                    <img src="../images/lost-2.jpg" alt="">
+                </div>
+
+                <div class="container p-5 mt-5" id="form-container">
+                    <h1 class="text-center">Lost & Found Form</h1>
+                    <form id="lostFoundForm" class="mt-4">
+                        <div class="form-group">
+                            <label for="status">Item Status*</label>
+                            <select class="form-control" id="status" required>
+                                <option value="">Select status</option>
+                                <option value="lost">Lost</option>
+                                <option value="found">Found</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-primary" id="inputGroup-sizing-default">Name*</span>
+                            </div>
+                            <input type="text" class="form-control" id="name" placeholder="Name" aria-label="Name" aria-describedby="inputGroup-sizing-default" required>
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-primary" id="inputGroup-sizing-default">Email*</span>
+                            </div>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" aria-label="Email" aria-describedby="inputGroup-sizing-default" required>
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-primary" id="inputGroup-sizing-default">Contact Number*</span>
+                            </div>
+                            <input type="tel" class="form-control" id="contactNo" name="contactNo" placeholder="Contact Number" aria-label="Contact Number" aria-describedby="inputGroup-sizing-default" required>
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-primary" id="inputGroup-sizing-default">Item*</span>
+                            </div>
+                            <input type="text" class="form-control" id="item" name="item" placeholder="Item" aria-label="Item" aria-describedby="inputGroup-sizing-default" required>
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-primary" id="inputGroup-sizing-default">Upload Images</span>
+                            </div>
+                            <input type="file" class="form-control-file" id="image" name="image" accept="image/*" multiple>
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-primary" id="inputGroup-sizing-default">Location</span>
+                            </div>
+                            <input type="text" class="form-control" id="location" name="location" placeholder="Location" aria-label="Location" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-primary" id="inputGroup-sizing-default">Date*</span>
+                            </div>
+                            <input type="date" class="form-control" id="date" name="date" aria-label="Date" aria-describedby="inputGroup-sizing-default" required>
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-primary" id="inputGroup-sizing-default">Description*</span>
+                            </div>
+                            <textarea class="form-control" id="description" name="description" placeholder="Description" aria-label="Description" aria-describedby="inputGroup-sizing-default" required></textarea>
+                        </div>
+                        <input type="hidden" id="itemId" name="itemId">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                    <!-- Display submission message -->
+                    <div id="message-container"></div>
+                    <!-- Display matching items with opposite statuses -->
+                    <div id="matching-items-container"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script>
+            // Submit form data
+            document.addEventListener('DOMContentLoaded', async () => {
+                document.getElementById('lostFoundForm').addEventListener('submit', async function (event) {
+                    event.preventDefault();
+    
+                    const status = document.getElementById('status').value;
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const contactNo = document.getElementById('contactNo').value;
+                    const item = document.getElementById('item').value;
+                    const location = document.getElementById('location').value;
+                    const date = document.getElementById('date').value;
+                    const description = document.getElementById('description').value;
+    
+                    const formData = new FormData();
+                    formData.append('status', status);
+                    formData.append('name', name);
+                    formData.append('email', email);
+                    formData.append('contactNo', contactNo);
+                    formData.append('item', item);
+                    formData.append('location', location);
+                    formData.append('date', date);
+                    formData.append('description', description);
+                    const imageFiles = document.getElementById('image').files;
+                    for (let i = 0; i < imageFiles.length; i++) {
+                        formData.append('images', imageFiles[i]);
+                    }
+    
+                    try {
+                        const response = await fetch('http://localhost:3000/api/submit-item', {
+                            method: 'POST',
+                            body: formData
+                        });
+    
+                        const data = await response.json();
+    
+                        const messageContainer = document.getElementById('message-container');
+                        messageContainer.innerHTML = `<div class="alert alert-${data.success ? 'success' : 'danger'}" role="alert">${data.message}</div>`;
+    
+                        // Fetch matching items after successful form submission
+                        await fetchMatchingItems(item, description, status);
+                    } catch (error) {
+                        console.error('Error:', error);
+                        alert('An error occurred. Please try again later.');
+                    }
+                });
+            });
+    
+            // Fetch matching items with opposite statuses
+            async function fetchMatchingItems(item, description, status) {
+                try {
+                    const response = await fetch(`http://localhost:3000/api/matching-items?item=${encodeURIComponent(item)}&description=${encodeURIComponent(description)}&status=${status}`);
+                    const data = await response.json();
+    
+                    const matchingItemsContainer = document.getElementById('matching-items-container');
+                    if (data.items && data.items.length > 0) {
+                        let matchingItemsHTML = '<h2>This could be what you are looking for</h2>';
+                        data.items.forEach(item => {
+                            let imagesHTML = '';
+                            item.images.forEach(image => {
+                                imagesHTML += `<img src="${image}" class="img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5" alt="Item Image">`;
+                            });
+                            matchingItemsHTML += `
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        ${imagesHTML}
+                                        <h5 class="card-title">${item.item}</h5>
+                                        <p class="card-text">Description: ${item.description}</p>
+                                        <p class="card-text">Location: ${item.location}</p>
+                                        <p class="card-text">Date: ${item.date}</p>
+                                        <p class="card-text">Status: ${item.status}</p>
+                                        <p class="card-text">Submitted by: ${item.name}</p>
+                                        <p class="card-text">Contact No: ${item.contactNo}</p>
+                                        <p class="card-text">Email: ${item.email}</p>
+                                        <button class="btn btn-primary claim-btn" data-item-id="${item._id}">Claim</button>
+                                    </div>
+                                </div>
+                            `;
+                        });
+                        matchingItemsContainer.innerHTML = matchingItemsHTML;
+                        // Attach event listener to claim button
+                        document.querySelectorAll('.claim-btn').forEach(btn => {
+                            btn.addEventListener('click', async function () {
+                                const itemId = this.getAttribute('data-item-id');
+                                // Inside the event listener for the claim button
+try {
+    const response = await fetch(`http://localhost:3000/api/mark-claimed/${itemId}`, {
+        method: 'PUT'
+    });
+    const data = await response.json();
+    if (data.success) {
+        // Remove the claimed item from the UI
+        this.closest('.card').remove();
+        // Display success message to the user
+        alert(data.message);
+    } else {
+        alert(data.message); // Display error message if any
+    }
+} catch (error) {
+    console.error('Error:', error);
+    alert('An error occurred. Please try again later.');
+}
+
+                            });
+                        });
+                    } else {
+                        // Clear matching items container if no items found
+                        matchingItemsContainer.innerHTML = '';
+                    }
+                } catch (error) {
+                    console.error('Error fetching matching items:', error);
+                    alert('An error occurred while fetching matching items.');
+                }
+            }
+        </script>
+        
+</body>
+
+</html>
